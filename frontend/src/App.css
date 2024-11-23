@@ -1,6 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  min-width: 100%;
+  background-image: url("/background.jpg");
+  background-size: cover;
+}
+
+#user-form {
+  margin: 0 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  padding: 2rem;
+}
+
+#alert-msg{
+  margin: 0;
+  padding: 0;
+  padding-left: 4px;
+  color: red;
+  align-self: baseline;
+  height: 2rem;
+}
+
+#user-form>label {
+  font-size: 1rem;
+  text-align: start;
+  width: 100%;
+  padding-left: 4px;
+}
+
+#user-form>input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #242424;
+  border-radius: 8px;
+  border: 1px solid #555;
+  box-shadow: 4px 4px 8px#3b5c572c;
+}
+
+#phone-input {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+#phone-input>select {
+  padding: 8px;
+  padding-right: 2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  appearance: none;
+  background: none;
+  background-image: url("/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: right 1rem center;
+  border-radius: 8px;
+  border: 1px solid #555;
+  box-shadow: 4px 4px 8px#3b5c572c;
+  background-color: #242424;
+}
+
+#phone-input>input {
+  flex: auto;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #555;
+  box-shadow: 4px 4px 8px#3b5c572c;
+  background-color: #242424;
+}
+
+input#submit{
+  background-color: #66FECB;
+  color: black;
+  font-weight: bold;
+  align-self: self-start;
+  width: 150px;
+}
+
+#submit:disabled{
+  background-color: #ccc;
+  opacity: 50%;
+}
+
+#user-data-card{
+  margin-left: 20vw;
+  margin-top: 20vh;
+  width: 50vw;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#user-data-card>h1{
+  width: 100%;
+  text-align: start;
+}
+
+#user-data-card>div{
+  text-align: start;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+#user-data-card>.label{
+  width: 200px;
 }
